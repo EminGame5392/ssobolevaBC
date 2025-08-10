@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Светлана Соболева | Дизайнер</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600&display=swap');
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #fafafa;
+            color: #333;
+        }
+        
+        .hero-title {
+            font-family: 'Playfair Display', serif;
+            letter-spacing: 1px;
+        }
+        
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .section-title:after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 50%;
+            height: 2px;
+            background: #d4af37;
+        }
+        
+        .contact-card {
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+        
+        .contact-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .nav-link {
+            position: relative;
+        }
+        
+        .nav-link:after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 1px;
+            background: #d4af37;
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover:after {
+            width: 100%;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col">
+    <!-- Header -->
+    <header class="py-6 px-4 sm:px-8 lg:px-12">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="text-xl font-light tracking-wider">Светлана Соболева</div>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#hero" class="nav-link text-sm uppercase tracking-wider">Главная</a>
+                <a href="#about" class="nav-link text-sm uppercase tracking-wider">Обо мне</a>
+                <a href="#contacts" class="nav-link text-sm uppercase tracking-wider">Контакты</a>
+            </nav>
+            <button class="md:hidden text-xl">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="py-20 px-4 sm:px-8 lg:px-12 flex-grow">
+        <div class="container mx-auto flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-12 md:mb-0">
+                <h1 class="hero-title text-4xl sm:text-5xl md:text-6xl font-medium mb-6 leading-tight">
+                    Светлана Соболева<br>
+                    <span class="text-gold-600">Дизайнер</span>
+                </h1>
+                <p class="text-lg text-gray-600 mb-8 max-w-md">
+                    Создаю элегантные и функциональные дизайны, которые вдохновляют и решают бизнес-задачи.
+                </p>
+                <a href="#contacts" class="inline-block px-8 py-3 bg-gray-800 text-white rounded-sm hover:bg-gray-700 transition duration-300">
+                    Связаться со мной
+                </a>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <div class="relative w-64 h-64 sm:w-80 sm:h-80 rounded-full bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center overflow-hidden shadow-lg">
+                    <div class="absolute inset-0 bg-gradient-to-br from-transparent to-gray-100 opacity-50"></div>
+                    <div class="relative z-10 text-center">
+                        <div class="text-6xl sm:text-7xl mb-2">👩‍🎨</div>
+                        <div class="text-sm uppercase tracking-widest">Дизайнер</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 px-4 sm:px-8 lg:px-12 bg-white">
+        <div class="container mx-auto">
+            <h2 class="section-title text-3xl mb-12">Обо мне</h2>
+            <div class="flex flex-col md:flex-row gap-12">
+                <div class="md:w-1/2">
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Привет! Я Светлана Соболева, профессиональный дизайнер с более чем 7-летним опытом работы в различных областях дизайна. 
+                    </p>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Моя специализация включает веб-дизайн, графический дизайн и брендинг. Я верю, что хороший дизайн — это не только эстетика, но и функциональность, которая помогает бизнесу достигать своих целей.
+                    </p>
+                    <p class="text-gray-600 leading-relaxed">
+                        В своей работе я уделяю особое внимание деталям, типографике и цветовым решениям, создавая гармоничные и запоминающиеся визуальные образы.
+                    </p>
+                </div>
+                <div class="md:w-1/2">
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="p-6 bg-gray-50 rounded-sm">
+                            <div class="text-3xl mb-4 text-gray-400"><i class="fas fa-pen-fancy"></i></div>
+                            <h3 class="font-medium mb-2">Графический дизайн</h3>
+                            <p class="text-sm text-gray-500">Логотипы, брендбуки, полиграфия</p>
+                        </div>
+                        <div class="p-6 bg-gray-50 rounded-sm">
+                            <div class="text-3xl mb-4 text-gray-400"><i class="fas fa-laptop-code"></i></div>
+                            <h3 class="font-medium mb-2">Веб-дизайн</h3>
+                            <p class="text-sm text-gray-500">Сайты, интерфейсы, мобильные приложения</p>
+                        </div>
+                        <div class="p-6 bg-gray-50 rounded-sm">
+                            <div class="text-3xl mb-4 text-gray-400"><i class="fas fa-cube"></i></div>
+                            <h3 class="font-medium mb-2">3D-визуализация</h3>
+                            <p class="text-sm text-gray-500">Продукты, интерьеры, архитектура</p>
+                        </div>
+                        <div class="p-6 bg-gray-50 rounded-sm">
+                            <div class="text-3xl mb-4 text-gray-400"><i class="fas fa-mobile-alt"></i></div>
+                            <h3 class="font-medium mb-2">UI/UX дизайн</h3>
+                            <p class="text-sm text-gray-500">Пользовательские интерфейсы и опыт</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacts Section -->
+    <section id="contacts" class="py-20 px-4 sm:px-8 lg:px-12 bg-gray-50">
+        <div class="container mx-auto">
+            <h2 class="section-title text-3xl mb-12">Контакты</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="contact-card p-8 bg-white rounded-sm">
+                    <div class="text-4xl mb-6 text-gray-400"><i class="fas fa-envelope"></i></div>
+                    <h3 class="text-xl font-medium mb-2">Email</h3>
+                    <p class="text-gray-600 mb-4">Напишите мне на почту</p>
+                    <a href="mailto:hello@soboleva.design" class="text-gray-800 hover:text-gold-600 transition">hello@soboleva.design</a>
+                </div>
+                <div class="contact-card p-8 bg-white rounded-sm">
+                    <div class="text-4xl mb-6 text-gray-400"><i class="fas fa-phone-alt"></i></div>
+                    <h3 class="text-xl font-medium mb-2">Телефон</h3>
+                    <p class="text-gray-600 mb-4">Позвоните мне</p>
+                    <a href="tel:+79001234567" class="text-gray-800 hover:text-gold-600 transition">+7 (900) 123-45-67</a>
+                </div>
+                <div class="contact-card p-8 bg-white rounded-sm">
+                    <div class="text-4xl mb-6 text-gray-400"><i class="fas fa-map-marker-alt"></i></div>
+                    <h3 class="text-xl font-medium mb-2">Адрес</h3>
+                    <p class="text-gray-600 mb-4">Приходите в гости</p>
+                    <p class="text-gray-800">Москва, ул. Дизайнерская, 15</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 px-4 sm:px-8 bg-gray-100">
+        <div class="container mx-auto text-center">
+            <p class="text-gray-500 text-sm mb-6">&copy; GDev. Все права защищены.</p>
+            <div class="flex justify-center space-x-6">
+                <a href="https://github.com" target="_blank" class="text-gray-500 hover:text-gray-800 transition">
+                    <i class="fab fa-github text-xl"></i>
+                </a>
+                <a href="https://telegram.org" target="_blank" class="text-gray-500 hover:text-gray-800 transition">
+                    <i class="fab fa-telegram text-xl"></i>
+                </a>
+                <a href="#" class="text-gray-500 hover:text-gray-800 transition">
+                    <i class="fas fa-globe text-xl"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+        
+        // Mobile menu toggle (placeholder)
+        document.querySelector('button').addEventListener('click', function() {
+            alert('Мобильное меню будет реализовано здесь');
+        });
+    </script>
+</body>
+</html>
